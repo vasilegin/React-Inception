@@ -1,24 +1,22 @@
-import React from "react";
+import React, {useState} from "react";
 
 function App() {
-  let counter = 5;
+  const [counter, setCounter] = useState(10);
 
-  function inc() {
-    counter +=1
-    console.log(counter)
-  };
+  function Inc() {
+    setCounter(counter + 1)
+  }
 
-  function dec() {
-    counter -=1
-    console.log(counter)
-  };
+  function Dec() {
+    setCounter(counter - 1)
+  }
 
-
+  // console.log(counter, setCounter)
   return (
     <div>
       <h1>{counter}</h1>
-          <button onClick={inc}>Inc</button>
-          <button onClick={dec}>Dec</button>
+      <button onClick={Inc}>Inc</button>
+      <button onClick={Dec}>Dec</button>
     </div>
     );
 }
