@@ -4,7 +4,5 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  React.createElement('button', {
-    onClick: () => console.log("Click")
-  }, React.createElement('div', {}, "Жми"))
+  <App></App>
 );
