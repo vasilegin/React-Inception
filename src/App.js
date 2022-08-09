@@ -1,15 +1,11 @@
 import React, {useState} from "react";
 import Counter from "./components/Counter";
+import Item from "./components/Item";
 
 function App() {
   return (
     <div>
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
-      <Counter/>
+      <Item title='kjdsahgk' descriptions='asdgfsdag' button_name='adfasdf' key='1'/>
     </div>
     );
 }
