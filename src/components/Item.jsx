@@ -11,7 +11,7 @@ const Item = ({title, descriptions, button_name, props}) => {
                 <div className='post__desc'>
                     {descriptions}
                 </div>
-                <div>
+                <div className='post_btns'>
                     <MyButton>{button_name}</MyButton>
                 </div>
             </div>
