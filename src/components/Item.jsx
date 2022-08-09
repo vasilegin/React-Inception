@@ -3,10 +3,18 @@ import MyButton from './UI/button/MyButton';
 
 const Item = ({title, descriptions, button_name, props}) => {
     return (
-        <div>
-            <h4>{title}</h4>
-            <div>{descriptions}</div>
-            <MyButton>{button_name}</MyButton>
+        <div className='post'>
+            <div className='post__content'>
+                <strong>
+                    {title}
+                </strong>
+                <div className='post__desc'>
+                    {descriptions}
+                </div>
+                <div>
+                    <MyButton>{button_name}</MyButton>
+                </div>
+            </div>
         </div>
     );
 };
